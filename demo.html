@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>دموی مهرنگار — پیش‌نمایش رابط</title>
+  <meta name="description" content="پیش‌نمایش تعاملی رابط مهرنگار با اسکرین‌شات‌های واقعی محصول." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+  <div id="gate" class="gate">
+    <a class="back-home" href="index.html">← بازگشت به ویترین</a>
+    <div class="gate-card">
+      <p class="gate-brand">مهرنگار</p>
+      <h1>ورود به پیش‌نمایش</h1>
+      <p class="gate-lede">
+        این دمو یک تور رابط است (اسکرین‌شات واقعی). سورس اپ خصوصی است و اینجا تغییر نمی‌کند.
+      </p>
+
+      <div class="quick">
+        <button type="button" data-user="bardiya" data-pass="Admin@1234">ورود سریع مدیر</button>
+        <button type="button" data-user="sultan" data-pass="User@1234">ورود سریع فروشنده</button>
+      </div>
+
+      <form id="login-form" autocomplete="on">
+        <label>
+          نام کاربری
+          <input id="username" name="username" type="text" placeholder="bardiya یا sultan" required />
+        </label>
+        <label>
+          رمز عبور
+          <input id="password" name="password" type="password" placeholder="رمز دمو" required />
+        </label>
+        <p id="login-error" class="error" hidden>نام کاربری یا رمز نادرست است.</p>
+        <button class="submit" type="submit">ورود به پیش‌نمایش</button>
+      </form>
+
+      <table class="creds">
+        <thead>
+          <tr><th>نقش</th><th>کاربر</th><th>رمز</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>مدیر</td><td><code>bardiya</code></td><td><code>Admin@1234</code></td></tr>
+          <tr><td>فروشنده</td><td><code>sultan</code></td><td><code>User@1234</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="tour" class="tour" hidden>
+    <header class="tour-bar">
+      <div class="tour-brand">
+        <a href="index.html">مهرنگار</a>
+        <span>پیش‌نمایش رابط</span>
+      </div>
+      <nav id="screen-nav" class="screen-nav" aria-label="صفحات"></nav>
+      <button type="button" id="logout" class="logout">خروج</button>
+    </header>
+
+    <div class="viewer">
+      <aside class="rail" aria-label="منوی صفحات">
+        <p class="rail-title">صفحات</p>
+        <div id="rail-list"></div>
+      </aside>
+
+      <section class="stage">
+        <div class="stage-meta">
+          <h2 id="screen-title">خانه</h2>
+          <p id="screen-desc"></p>
+        </div>
+        <figure class="frame">
+          <img id="screen-img" src="screenshots/overview.png" alt="" />
+        </figure>
+        <div class="pager">
+          <button type="button" id="prev">قبلی</button>
+          <span id="pager-label">۱ / ۸</span>
+          <button type="button" id="next">بعدی</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="demo.js"></script>
+</body>
+</html>

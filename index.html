@@ -18,7 +18,7 @@
     <nav>
       <a href="#preview">پیش‌نمایش</a>
       <a href="#features">امکانات</a>
-      <a class="nav-cta" href="#demo">دمو</a>
+      <a class="nav-cta" href="demo.html">دمو</a>
     </nav>
   </header>
 
@@ -31,7 +31,7 @@
           سامانه POS، موجودی چندانباره و گزارش‌های مالی — برای مدیریت روزمره فروشگاه.
         </p>
         <div class="cta-row">
-          <a class="btn primary" href="#demo">ورود به دمو</a>
+          <a class="btn primary" href="demo.html">ورود به دمو</a>
           <a class="btn ghost" href="#preview">مشاهده رابط</a>
         </div>
       </div>
@@ -115,10 +115,10 @@
     </section>
 
     <section id="demo" class="demo">
-      <h2>دموی تعاملی</h2>
+      <h2>پیش‌نمایش تعاملی</h2>
       <p class="section-lede">
-        این صفحه ویترین عمومی است. اپلیکیشن کامل روی محیط دمو جداگانه اجرا می‌شود؛
-        پس از آماده‌شدن لینک، از اینجا وارد شوید.
+        تور رابط با اسکرین‌شات‌های واقعی محصول — بدون نیاز به سرور اپ اصلی.
+        ورود با حساب‌های دمو یا دکمه‌های ورود سریع.
       </p>
       <div class="creds">
         <table>
@@ -130,27 +130,17 @@
             <tr><td>فروشنده</td><td><code>sultan</code></td><td><code>User@1234</code></td></tr>
           </tbody>
         </table>
-        <p class="hint">در صفحه ورود دکمه‌های ورود سریع هم هست.</p>
-        <a class="btn primary" href="#" id="demo-link" aria-disabled="true">لینک دمو به‌زودی</a>
+        <p class="hint">این پیش‌نمایش فقط ویترین است؛ سورس و دیتابیس اپ اصلی اینجا اجرا نمی‌شود.</p>
+        <a class="btn primary" href="demo.html">باز کردن دمو</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <p>
-      سورس کامل خصوصی است؛ برای ارزیابی فنی از دمو و در صورت نیاز walkthrough استفاده کنید.
+      سورس کامل خصوصی است؛ برای ارزیابی فنی از پیش‌نمایش و در صورت نیاز walkthrough استفاده کنید.
     </p>
     <p class="credit">توسعه: <a href="https://kishlandweb.ir" rel="noopener" target="_blank">کیش لَند وب</a></p>
   </footer>
-
-  <script>
-    const demoUrl = ""; // پس از دیپلوی اپ دمو، URL را اینجا بگذارید
-    const link = document.getElementById("demo-link");
-    if (demoUrl) {
-      link.href = demoUrl;
-      link.textContent = "باز کردن دمو";
-      link.removeAttribute("aria-disabled");
-    }
-  </script>
 </body>
 </html>
