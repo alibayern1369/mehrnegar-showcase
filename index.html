@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مهرنگار — سامانه حسابداری و فروش فروشگاهی</title>
+  <meta name="description" content="پیش‌نمایش عمومی مهرنگار: سامانه حسابداری، فروش (POS) و انبارداری فروشگاهی." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="logo" href="#">مهرنگار</a>
+    <nav>
+      <a href="#preview">پیش‌نمایش</a>
+      <a href="#features">امکانات</a>
+      <a class="nav-cta" href="#demo">دمو</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="brand">مهرنگار</p>
+        <h1>حسابداری و فروش فروشگاهی، یکجا</h1>
+        <p class="lede">
+          سامانه POS، موجودی چندانباره و گزارش‌های مالی — برای مدیریت روزمره فروشگاه.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#demo">ورود به دمو</a>
+          <a class="btn ghost" href="#preview">مشاهده رابط</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img
+          src="screenshots/overview.png"
+          alt="داشبورد مهرنگار"
+          width="1600"
+          height="900"
+          fetchpriority="high"
+        />
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>چه کارهایی انجام می‌دهد؟</h2>
+      <p class="section-lede">از ثبت فروش تا انبارگردانی و گزارش — بدون پیچیدگی اضافه.</p>
+      <ul class="feature-list">
+        <li>
+          <strong>فروش و فاکتور</strong>
+          <span>ثبت فروش، مرجوعی، ویرایش سفارش و چاپ مجدد فاکتور</span>
+        </li>
+        <li>
+          <strong>محصولات و بارکد</strong>
+          <span>رنگ و سایز، بارکد واحد، رهگیری سریع در صندوق</span>
+        </li>
+        <li>
+          <strong>چندانباره</strong>
+          <span>توزیع، انتقال موجودی و انبارگردانی</span>
+        </li>
+        <li>
+          <strong>گزارش و خروجی</strong>
+          <span>گزارش مالی/فروش با Excel و PDF</span>
+        </li>
+        <li>
+          <strong>ورود امن</strong>
+          <span>رمز + OTP؛ در دمو کد روی صفحه نمایش داده می‌شود</span>
+        </li>
+        <li>
+          <strong>موبایل‌پسند</strong>
+          <span>رابط واکنش‌گرا برای دسکتاپ و موبایل</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="preview" class="gallery">
+      <h2>پیش‌نمایش رابط</h2>
+      <p class="section-lede">نمایی از صفحات اصلی سامانه.</p>
+
+      <figure class="shot wide">
+        <img src="screenshots/login.png" alt="صفحه ورود" loading="lazy" />
+        <figcaption>ورود</figcaption>
+      </figure>
+
+      <div class="shot-grid">
+        <figure class="shot">
+          <img src="screenshots/products.png" alt="محصولات" loading="lazy" />
+          <figcaption>محصولات</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="screenshots/sell.png" alt="ثبت فروش" loading="lazy" />
+          <figcaption>ثبت فروش</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="screenshots/warehouses.png" alt="انبارها" loading="lazy" />
+          <figcaption>انبارها</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="screenshots/reports.png" alt="گزارش‌ها" loading="lazy" />
+          <figcaption>گزارش‌ها</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="screenshots/settings.png" alt="تنظیمات" loading="lazy" />
+          <figcaption>تنظیمات</figcaption>
+        </figure>
+        <figure class="shot mobile">
+          <img src="screenshots/overview-mobile.png" alt="نمای موبایل" loading="lazy" />
+          <figcaption>موبایل</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="demo" class="demo">
+      <h2>دموی تعاملی</h2>
+      <p class="section-lede">
+        این صفحه ویترین عمومی است. اپلیکیشن کامل روی محیط دمو جداگانه اجرا می‌شود؛
+        پس از آماده‌شدن لینک، از اینجا وارد شوید.
+      </p>
+      <div class="creds">
+        <table>
+          <thead>
+            <tr><th>نقش</th><th>نام کاربری</th><th>رمز</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>مدیر</td><td><code>bardiya</code></td><td><code>Admin@1234</code></td></tr>
+            <tr><td>فروشنده</td><td><code>sultan</code></td><td><code>User@1234</code></td></tr>
+          </tbody>
+        </table>
+        <p class="hint">در صفحه ورود دکمه‌های ورود سریع هم هست.</p>
+        <a class="btn primary" href="#" id="demo-link" aria-disabled="true">لینک دمو به‌زودی</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      سورس کامل خصوصی است؛ برای ارزیابی فنی از دمو و در صورت نیاز walkthrough استفاده کنید.
+    </p>
+    <p class="credit">توسعه: <a href="https://kishlandweb.ir" rel="noopener" target="_blank">کیش لَند وب</a></p>
+  </footer>
+
+  <script>
+    const demoUrl = ""; // پس از دیپلوی اپ دمو، URL را اینجا بگذارید
+    const link = document.getElementById("demo-link");
+    if (demoUrl) {
+      link.href = demoUrl;
+      link.textContent = "باز کردن دمو";
+      link.removeAttribute("aria-disabled");
+    }
+  </script>
+</body>
+</html>
